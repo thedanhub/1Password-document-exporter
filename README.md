@@ -1,4 +1,4 @@
-# 1Password-document-exporter
+# 1Password Document Exporter
 
 Current versions of the 1Password apps (version 7.x at the time of writing) do not include Document items if you export your data. Whether you want to switch to a new password manager and take your existing data with you, or if you just want to make a backup, the only currently recommended solution is to download the files manually, and make a copy yourself. It's clearly a very ugly solution, but this could work if you only have a handful of Document items. If you have hundreds or more of them though, it's just not a feasible solution.
 
