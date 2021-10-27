@@ -26,9 +26,9 @@ There will be one subfolder for each source vault which contains Document items 
 
 ## Usage
 
-- Make the 1password-document-export.sh executable with chmod +x 1password-document-export.sh
-- [Authenticate to your 1Password account in the CLI](https://support.1password.com/command-line-getting-started/#get-started-with-the-command-line-tool)
-- Once you have a valid CLI `op` session, run `./1password-document-export.sh` to get your documents
+1. Make the 1password-document-export.sh executable with chmod +x 1password-document-export.sh
+2. [Authenticate to your 1Password account in the CLI](https://support.1password.com/command-line-getting-started/#get-started-with-the-command-line-tool)
+3. Once you have a valid CLI `op` session, run `./1password-document-export.sh` to get your documents
 
 ## Limitations
 
