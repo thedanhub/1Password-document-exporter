@@ -25,8 +25,8 @@ do
     if [[ $VAULT_UUID != $LAST_CHECKED_VAULT ]]; then # New vault: only fetch vault name once per vault
         VAULT_NAME=$(op list vaults | jq -r --arg VAULT_UUID "$VAULT_UUID" '.[] | select(.uuid==$VAULT_UUID) | .name')
         LAST_CHECKED_VAULT=$VAULT_UUID
+        mkdir -p /Users/$(whoami)/Downloads/1PasswordDocuments/$VAULT_NAME-$VAULT_UUID
     fi
-    mkdir -p /Users/$(whoami)/Downloads/1PasswordDocuments/$VAULT_NAME-$VAULT_UUID
     op get document $UUID --output /Users/$(whoami)/Downloads/1PasswordDocuments/$VAULT_NAME-$VAULT_UUID/$TITLE
     COUNTER=$[$COUNTER +1]
 done
